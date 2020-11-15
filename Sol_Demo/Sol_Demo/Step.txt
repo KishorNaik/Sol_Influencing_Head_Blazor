@@ -1,0 +1,12 @@
+Step 1:
+Add the following package from Nuget
+
+Microsoft.AspNetCore.Components.Web.Extensions
+
+Step 2:
+Go to _Host.cshtml file and Include the following script tag
+<script src="_content/Microsoft.AspNetCore.Components.Web.Extensions/headManager.js"></script>
+
+Step 3:
+Go to _Import.razor file and import following namespace.
+@using Microsoft.AspNetCore.Components.Web.Extensions.Head

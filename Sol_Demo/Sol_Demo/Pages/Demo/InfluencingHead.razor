@@ -1,0 +1,22 @@
+
+<Title Value="@this.TitleText"></Title>
+<Meta name="description" content="Modifying the head from a Blazor component." /> 
+<Link rel="icon" href="@this.FaviconPath"/>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-12">
+            <p>Curent Count : @this.CurrentCount</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2 col-md-2">
+            <button id="btnIncrement" class="btn btn-primary" @onclick="@(()=> this.IncrementCount(1))">Increment</button>
+        </div>
+        <div class="col-sm-2 col-md-2">
+            <button id="btnDecrement" class="btn btn-secondary" @onclick="@(()=> this.IncrementCount(-1))">Decrement</button>
+        </div>
+    </div>
+</div>
+
+
